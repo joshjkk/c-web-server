@@ -32,6 +32,33 @@ In order to see the web server, open your favourite browser and go to ```[addres
 
 The server will then stop and may take a minute or two to use again.
 
+## Example file
+
+``` c
+#include <stdio.h>
+
+// *********************
+ 
+#include <sys/socket.h>
+#include <sys/types.h>
+
+#include <netinet/in.h>
+
+// ^^^
+// For definitions like AF_INET, SOCK_STREAM, INADDR_ANY and etc.
+
+#include "include/server.h"
+
+int main(int argc, char **argv)
+{
+    // Create then launch the server object
+    struct Server server = init_server(AF_INET, 0, SOCK_STREAM, 80, 10, INADDR_ANY);
+    launch_server(&server, "A Web Server in C!!");
+
+    return 0;
+}
+```
+
 ## License
 
 Web Server is licensed under the Apache 2.0 License.
