@@ -2,6 +2,8 @@
 
 A web server in C.
 
+[![Build](https://github.com/joshjkk/c-web-server/actions/workflows/Build.yml/badge.svg)](https://github.com/joshjkk/c-web-server/actions/workflows/Build.yml)
+
 ## Why?
 
 I love C.
