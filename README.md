@@ -1,4 +1,4 @@
-# Web Server
+# C Web Server
 
 A web server in C.
 
