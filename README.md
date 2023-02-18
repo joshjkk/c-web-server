@@ -32,7 +32,7 @@ In order to see the web server, open your favourite browser and go to ```[addres
 
 ### Routes
 
-As of ```v0.2.0````, you can add your own routes to html pages inside the ```templates``` folder.
+As of ```v0.2.0```, you can add your own routes to html pages inside the ```templates``` folder.
 
 To see these routes, use the following function inside your main file:
 
