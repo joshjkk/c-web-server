@@ -1,6 +1,6 @@
 # Web Server
 
-A barebones web server in C.
+A web server in C.
 
 ## Why?
 
@@ -19,7 +19,7 @@ make
 Run the following command to start the server, may take a few minutes in between uses:
 
 ``` bash
-sudo ./webserver.out
+sudo ./server.out
 ```
 
 You will receive the following info in the terminal:
@@ -30,34 +30,21 @@ You will receive the following info in the terminal:
 
 In order to see the web server, open your favourite browser and go to ```[address]```.
 
-The server will then stop and may take a minute or two to use again.
+### Routes
 
-## Example file
+As of ```v0.2.0````, you can add your own routes to html pages inside the ```templates``` folder.
 
-``` c
-#include <stdio.h>
+To see these routes, use the following function inside your main file:
 
-// *********************
- 
-#include <sys/socket.h>
-#include <sys/types.h>
-
-#include <netinet/in.h>
-
-// ^^^
-// For definitions like AF_INET, SOCK_STREAM, INADDR_ANY and etc.
-
-#include "include/server.h"
-
-int main(int argc, char **argv)
-{
-    // Create then launch the server object
-    struct Server server = init_server(AF_INET, 0, SOCK_STREAM, 80, 10, INADDR_ANY);
-    launch_server(&server, "A Web Server in C!!");
-
-    return 0;
-}
+``` c 
+add_route(route, "page_address_of_route", "name_of_html_file.html");
 ```
+
+The routes ```/about``` and ```/``` come already set up, as well as a 404 Page for unknown routes.
+
+#### Stylesheet
+
+The stylesheet for these html can be found inside the ```static``` folder.
 
 ## License
 
