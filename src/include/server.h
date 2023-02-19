@@ -1,3 +1,5 @@
+/* C Web Server by joshjkk@github */
+
 #ifndef SERVER_H
 #define SERVER_H
 
