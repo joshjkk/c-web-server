@@ -46,7 +46,7 @@ The routes ```/about``` and ```/``` come already set up, as well as a 404 Page f
 
 #### Stylesheet
 
-The stylesheet for these html can be found inside the ```static``` folder.
+The stylesheet for these html files can be found inside the ```static``` folder.
 
 ## License
 
