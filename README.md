@@ -6,7 +6,7 @@ A web server in C.
 
 ## Why?
 
-I love C.
+C is cool.
 
 ## Build from source
 
