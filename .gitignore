@@ -1,3 +1,2 @@
 *.out
 src/*.o
-src/main.c
