@@ -32,22 +32,6 @@ You will receive the following info in the terminal:
 
 In order to see the web server, open your favourite browser and go to ```[address]```.
 
-### Routes
-
-As of ```v0.2.0```, you can add your own routes to html pages inside the ```templates``` folder.
-
-To see these routes, use the following function inside your main file:
-
-``` c 
-add_route(route, "page_address_of_route", "name_of_html_file.html");
-```
-
-The routes ```/about``` and ```/``` come already set up, as well as a 404 Page for unknown routes.
-
-#### Stylesheet
-
-The stylesheet for these html files can be found inside the ```static``` folder.
-
 ## License
 
-Web Server is licensed under the Apache 2.0 License.
+C Web Server is licensed under the Apache 2.0 License.
