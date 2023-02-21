@@ -1,3 +1,7 @@
+h1, h2, h3, p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h1 {
-	color: #eb4034;
+	background-color: cornflowerblue;
 }

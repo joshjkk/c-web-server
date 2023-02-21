@@ -37,7 +37,7 @@ struct Route *add_route(struct Route *route, char *key, char *value)
     return route;
 }
 
-struct Route * search(struct Route *route, char* key)
+struct Route *search(struct Route *route, char* key)
 {
 	if (route == NULL)
 		return NULL;

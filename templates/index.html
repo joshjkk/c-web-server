@@ -8,7 +8,27 @@
     <title>C Web Server</title>
   </head>
   <body>
-      <h1>Home</h1>
-      <p>This is the home page of the web server.</p>
+    <h1>C Web Server</h1>
+    <hr>
+    <h2>Routing Pages</h2>
+    <p>3 Pages are already created and routed for you, but more can be added.</p>
+    <p>These pages are <a href="/">index.html</a>, <a href="/about">about.html</a> and 404.html.</p>
+    <h3>index.html</h3>
+    <p>This is the main page of the site, this is '<strong>templates/index.html</strong>'.</p>
+    <p>You can go to this page just by entering the page address, or going to <strong>127.0.0.1/index.html</strong>, if the page address was 127.0.0.1.</p>
+    <h3>about.html</h3>
+    <p>Go to about.html by adding <strong>/about</strong> onto the end of the page address.</p>
+    <p>For example: <strong>127.0.0.1/about</strong>, if the page address was 127.0.0.1.</p>
+    <h3>404.html</h3>
+    <p>Go to 404.html by going to an unknown route <strong>(just type in a random address after '/')</strong>.</p>
+    <p>For example: <strong>127.0.0.1/ishsadybdyfs</strong>, if the page address was 127.0.0.1.</p>
+    <h3>Creating more</h3>
+    <p>You can add more of these by creating new html files inside the templates directory and adding routes to them in your main.c file.</p>
+    <br>
+    <h2>Styling</h2>
+    <p>You can place your stylesheets inside the '<strong>static</strong>' directory, then link to them in your html files.</p>
+    <br>
+    <h2>Source Code</h2>
+    <a href="https://www.github.com/joshjkk/c-web-server"> The Github repo</a>
   </body>
 </html>
